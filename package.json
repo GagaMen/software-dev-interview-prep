@@ -1,0 +1,8 @@
+{
+  "name": "software-dev-interview-prep",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "1.1.1",
+    "typescript": "5.4.5"
+  }
+}

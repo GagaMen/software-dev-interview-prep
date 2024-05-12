@@ -1,0 +1,5 @@
+services:
+  bun:
+    image: oven/bun:1.1.7-alpine
+    volumes:
+      - ./:/home/bun/app
