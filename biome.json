@@ -3,6 +3,9 @@
     "organizeImports": {
         "enabled": true
     },
+    "files": {
+        "ignoreUnknown": true
+    },
     "formatter": {
         "indentStyle": "space",
         "indentWidth": 4,

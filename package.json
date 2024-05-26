@@ -1,6 +1,9 @@
 {
     "name": "software-dev-interview-prep",
     "type": "module",
+    "scripts": {
+        "biome": "biome lint --verbose --apply ./src"
+    },
     "devDependencies": {
         "@biomejs/biome": "1.7.3",
         "@types/bun": "1.1.1",

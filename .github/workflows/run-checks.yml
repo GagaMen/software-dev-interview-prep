@@ -1,0 +1,50 @@
+name: Run checks
+
+on:
+    push:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    setup:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  path: workspace
+
+            - name: Setup Bun
+              uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: 1.1.7
+
+            - name: Install dependencies
+              working-directory: workspace
+              run: bun install
+
+            - name: Cache workspace
+              uses: actions/cache@v4
+              with:
+                  path: workspace
+                  key: workspace-${{ github.sha }}
+
+    biome:
+        needs: setup
+        runs-on: ubuntu-latest
+        steps:
+            - name: Cache workspace
+              uses: actions/cache@v4
+              with:
+                  path: workspace
+                  key: workspace-${{ github.sha }}
+
+            - name: Setup Bun
+              uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: 1.1.7
+
+            - name: Run biome
+              working-directory: workspace
+              run: bun run biome
