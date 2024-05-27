@@ -36,3 +36,9 @@ To pass a sentence, it should be written in quotation marks.
 ```bash
 docker compose run --rm bun src/junior/count-vowels/index.ts "Hello, I'm Felix Dimmel."
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/junior/count-vowels
+```
