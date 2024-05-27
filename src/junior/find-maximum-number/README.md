@@ -36,3 +36,9 @@ To pass negative values you should prefix it with "--".
 ```bash
 docker compose run --rm bun src/junior/find-maximum-number/index.ts 3 7 2 9 5 0 -- -1
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/junior/find-maximum-number
+```
