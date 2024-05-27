@@ -30,3 +30,9 @@ You can find an implementation of the "Reverse String" function in [./src/junior
 ```bash
 docker compose run --rm bun src/junior/reverse-string/index.ts hello
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/junior/reverse-string
+```
