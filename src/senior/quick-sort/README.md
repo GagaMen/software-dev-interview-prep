@@ -43,3 +43,9 @@ You can find an implementation of the Quick Sort algorithm in [./src/senior/quic
 ```bash
 docker compose run --rm bun src/senior/quick-sort/index.ts --list 5,2,9,1,7
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/senior/quick-sort
+```
