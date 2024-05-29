@@ -43,3 +43,9 @@ You can find an implementation of the Merge Sort algorithm in [./src/senior/merg
 ```bash
 docker compose run --rm bun src/senior/merge-sort/index.ts --list 5,2,9,1,7
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/senior/merge-sort
+```
