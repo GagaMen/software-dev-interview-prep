@@ -36,3 +36,9 @@ To pass a word group, it should be written in quotation marks.
 ```bash
 docker compose run --rm bun src/mid-level/unique-elements/index.ts 1 2 2 3 4 4 5 "test 123" "test 123"
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/mid-level/unique-elements
+```
