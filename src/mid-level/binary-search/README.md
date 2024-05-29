@@ -40,3 +40,9 @@ You can find an implementation of the binary search algorithm in [./src/mid-leve
 ```bash
 docker compose run --rm bun src/mid-level/binary-search/index.ts --haystack 2,4,6,8,10 --target 6
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/mid-level/binary-search
+```
