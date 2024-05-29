@@ -1,5 +1,5 @@
 import { parseArgs } from 'node:util';
-import { longestCommonSubsequence } from './longest-common-sequence';
+import { longestCommonSubsequence } from './longest-common-subsequence';
 
 const { values } = parseArgs({
     args: process.argv.slice(2),

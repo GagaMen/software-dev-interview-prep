@@ -44,3 +44,9 @@ You can find an implementation of the Longest Common Subsequence algorithm in [.
 ```bash
 docker compose run --rm bun src/senior/longest-common-subsequence/index.ts --sequence1 ABCBDAB --sequence2 BBCBAB
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/senior/longest-common-subsequence
+```
