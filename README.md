@@ -41,11 +41,23 @@ docker compose run --rm bun <path_to_script>
 
 ## Contribution
 
-Contributions to this repository are welcome! If you have additional coding tasks or solutions that you would like to share, feel free to open a pull request. Please ensure that your contributions follow the existing folder structure and markdown format.
+Contributions to this repository are welcome! If you have additional coding tasks or solutions that you would like to share, feel free to open a pull request.
+Please ensure that your contributions follow the existing folder structure, markdown format, code style and containing tests.
+
+### Git hooks
+
+To check whether the code is correctly formatted and all tests still work, the git hooks can be activated with the following command:
+
+```bash
+git config --local core.hooksPath .githooks/
+```
+
+> The code style and the test are also checked in the pipeline!
 
 ## Disclaimer
 
-The tasks and solutions provided in this repository are for educational purposes and should not be used for unethical practices such as cheating in interviews. Use them as a learning resource to improve your coding skills and prepare for technical interviews.
+The tasks and solutions provided in this repository are for educational purposes and should not be used for unethical practices such as cheating in interviews.
+Use them as a learning resource to improve your coding skills and prepare for technical interviews.
 
 ## License
 

@@ -2,7 +2,8 @@
     "name": "software-dev-interview-prep",
     "type": "module",
     "scripts": {
-        "biome": "biome lint --verbose --apply ./src"
+        "biome:check": "biome check --verbose --colors=force src/",
+        "biome:format": "biome format --write --verbose src/"
     },
     "devDependencies": {
         "@biomejs/biome": "1.7.3",
