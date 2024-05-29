@@ -45,3 +45,9 @@ You can find an implementation of the Bubble Sort algorithm in [./src/senior/bub
 ```bash
 docker compose run --rm bun src/senior/bubble-sort/index.ts --list 5,2,9,1,7
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/senior/bubble-sort
+```
