@@ -31,3 +31,9 @@ You can find an implementation of the "Fibonacci Sequence" function in [./src/mi
 ```bash
 docker compose run --rm bun src/mid-level/fibonacci-sequence/index.ts 10
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/mid-level/fibonacci-sequence
+```
