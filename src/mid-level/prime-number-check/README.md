@@ -30,3 +30,9 @@ You can find an implementation of the "Prime Number Check" function in [./src/mi
 ```bash
 docker compose run --rm bun src/mid-level/prime-number-check/index.ts 7
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/mid-level/prime-number-check
+```
