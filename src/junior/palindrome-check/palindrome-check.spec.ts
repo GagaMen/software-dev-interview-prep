@@ -1,4 +1,4 @@
-import { describe, test, expect } from 'bun:test';
+import { describe, expect, test } from 'bun:test';
 import { palindromeCheck } from './palindrome-check';
 
 describe('palindromeCheck', () => {
