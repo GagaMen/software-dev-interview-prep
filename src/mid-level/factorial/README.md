@@ -29,3 +29,9 @@ You can find an implementation of the "Factorial" function in [./src/mid-level/f
 ```bash
 docker compose run --rm bun src/mid-level/factorial/index.ts 10
 ```
+
+### Unit Tests
+
+```bash
+docker compose run --rm bun bun test src/mid-level/factorial
+```
